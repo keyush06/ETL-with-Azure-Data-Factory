@@ -1,0 +1,9 @@
+{
+	"name": "olist-data-factory-key",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "edd46966-041e-4aed-81df-943d37bb5e55",
+		"tenantId": "7ebd3077-86e5-4894-9dcd-8ca070c352e2"
+	}
+}
