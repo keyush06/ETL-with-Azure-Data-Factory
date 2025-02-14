@@ -1,0 +1,30 @@
+{
+	"name": "Github_Files_for_iteration",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "HTTP_github_LinkedService",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"CSV_relative_URL": {
+				"type": "String"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": {
+					"value": "@dataset().CSV_relative_URL",
+					"type": "Expression"
+				}
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
